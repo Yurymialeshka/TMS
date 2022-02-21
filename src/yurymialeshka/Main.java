@@ -14,7 +14,7 @@ public class Main {
 
         String user = sc.nextLine();
 
-        System.out.println("Hello " + user + "! ");
+        System.out.println("Hello " + user + " !");
 
         sc.close();
     }
