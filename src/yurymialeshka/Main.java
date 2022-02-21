@@ -10,11 +10,11 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Будь так добр, введи слово <user>:");
+        System.out.println("Введите имя пользователя:");
 
-        String user = sc.next("<user>");
+        String user = sc.nextLine();
 
-        System.out.println("Hello " + user + " !");
+        System.out.println("Hello " + user + "! ");
 
         sc.close();
     }
