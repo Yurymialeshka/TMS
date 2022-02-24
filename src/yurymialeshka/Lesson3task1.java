@@ -33,7 +33,7 @@ public class Lesson3task1 {
                 season = "Осень";
                 break;
             default:
-                season = "Введено число больше 12 или меньше 1 или введенное значение не является численным";
+                season = "Введено число больше 12 или меньше 1 ";
         }
         System.out.println("Пора года: " + season);
 
