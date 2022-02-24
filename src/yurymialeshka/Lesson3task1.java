@@ -1,4 +1,5 @@
 package yurymialeshka;
+
 import java.util.Scanner;
 
 public class Lesson3task1 {
@@ -9,34 +10,31 @@ public class Lesson3task1 {
         System.out.println("Введите номер месяца: ");
 
         int month = sc.nextInt();
-        String season;
 
         switch (month) {
             case 12:
             case 1:
             case 2:
-                season = "Зима";
+                System.out.println("зима");
                 break;
             case 3:
             case 4:
             case 5:
-                season = "Весна";
+                System.out.println("весна");
                 break;
             case 6:
             case 7:
             case 8:
-                season = "Лето";
+                System.out.println("лето");
                 break;
             case 9:
             case 10:
             case 11:
-                season = "Осень";
+                System.out.println("осень");
                 break;
             default:
-                season = "Введено число больше 12 или меньше 1 ";
+                System.out.println("Введено число больше 12 или меньше 1");
         }
-        System.out.println("Пора года: " + season);
-
     }
 }
 
