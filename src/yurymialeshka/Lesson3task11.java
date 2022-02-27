@@ -1,6 +1,6 @@
 package yurymialeshka;
 
-public class Lesson4task11 {
+public class Lesson3task11 {
     public static void main(String[] args) {
         int a = 9;
         int b;
