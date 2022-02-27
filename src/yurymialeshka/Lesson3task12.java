@@ -5,13 +5,11 @@ public class Lesson3task12 {
         int a = 0;
         int b = 1;
         int c;
-        System.out.print(a + " " + b + " ");
-        for (int i = 1; i <= 9; ++i) {
+        for (int i = 1; i <= 11; i++) {
+            System.out.print(a + ", ");
             c = a + b;
             a = b;
             b = c;
-
-            System.out.print(c + " ");
         }
     }
 }
