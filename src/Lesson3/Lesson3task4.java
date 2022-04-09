@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Lesson3task4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите число:");
+        System.out.print("Введите число:");
         while (true) {
             if (sc.hasNextInt()) {
                 int t = sc.nextInt();
@@ -21,7 +21,7 @@ public class Lesson3task4 {
                 }
             } else {
                 String str = sc.next();
-                System.out.println("Ошибка вы ввели " + str + " вместо числа, попробуйте еще раз");
+                System.out.print("Ошибка вы ввели " + str + " вместо числа, попробуйте еще раз :");
             }
         }
     }
