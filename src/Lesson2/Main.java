@@ -1,4 +1,4 @@
-package yurymialeshka;
+package Lesson2;
 
 import java.util.Scanner;
 

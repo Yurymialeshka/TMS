@@ -1,4 +1,4 @@
-package yurymialeshka;
+package Lesson3;
 
 public class Lesson3task6 {
     public static void main(String[] args) {
