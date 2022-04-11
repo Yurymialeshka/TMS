@@ -24,7 +24,7 @@ public class Lesson4task0 {
                 break;
             }
         }
-        if (b == false) {
+        if (!b ) {
             System.out.println("Такого числа нет в массиве");
         }
     }
