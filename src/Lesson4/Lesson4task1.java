@@ -17,23 +17,23 @@ public class Lesson4task1 {
         System.out.print("Ведите число которое хотите удалить из массива: ");
         int delElement = sc.nextInt();
         boolean found = false;
-        for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i] == delElement) {
+        int attemps = 0;
+        for (int i : arr) {
+            if (i == delElement) {
+                attemps++;
                 found = true;
-                newArr = new int[arr.length - 1];
-                for (int index = 0; index < i; index++) {
-                    newArr[index] = arr[index];
-                }
-                for (int j = i; j < arr.length - 1; j++) {
-                    newArr[j] = arr[j + 1];
-                }
-
             }
         }
+        newArr = new int[arr.length - attemps];
+
+
+
+
         if (!found) {
             System.out.println("Такого числа в массиве нет!");
         } else
-            System.out.println("Массив с удаленными чмслами: " + Arrays.toString(newArr));
+            System.out.println("Массив с удаленными числами: " + Arrays.toString(newArr));
+
     }
 }
 
