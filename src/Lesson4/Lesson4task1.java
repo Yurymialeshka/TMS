@@ -9,8 +9,6 @@ public class Lesson4task1 {
         System.out.print("Введите размер массива: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
-
-        int[] newArr = null;
         for (int i = 0; i < arr.length; i++)
             arr[i] = (int) (Math.random() * n);
         System.out.println("Массив до удаления введенных значений: " + Arrays.toString(arr));
@@ -24,16 +22,18 @@ public class Lesson4task1 {
                 found = true;
             }
         }
-        newArr = new int[arr.length - attemps];
-
-
-
-
+        int[] newArr = new int[arr.length - attemps];
+        int u = 0;
+        for (int r : arr) {
+            if (delElement != r) {
+                newArr[u] = r;
+                u++;
+            }
+        }
         if (!found) {
             System.out.println("Такого числа в массиве нет!");
         } else
             System.out.println("Массив с удаленными числами: " + Arrays.toString(newArr));
-
     }
 }
 
