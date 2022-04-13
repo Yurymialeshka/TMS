@@ -16,25 +16,24 @@ public class Lesson4task2 {
 
         int min = arr[0];
         for (int i : arr) {
-            if (min > arr[i]) {
-                min = arr[i];
+            if (min > i) {
+                min = i;
             }
         }
         int max = arr[0];
         for (int i : arr) {
-            if (max < arr[i]) {
-                max = arr[i];
+            if (max < i) {
+                max = i;
             }
         }
         double t = 0;
         for (int j : arr) {
-            t = (arr[j] + t);
+            t += j ;
         }
-        t = t / arr.length;
+        t /= arr.length;
 
         System.out.println("Минимальное значение массива: " + min);
         System.out.println("Максимально значение массива: " + max);
         System.out.println("Среднее значение массива: " + t);
-
     }
 }
