@@ -2,11 +2,17 @@ package Lesson4;
 
 import java.util.Arrays;
 
-public class Lesson4tas3 {
+public class Lesson4task3 {
     public static void main(String[] args) {
 
-        int[] one = {2, 3, 5, 8, 9};
-        int[] two = {2, 3, 5, 8, 9};
+        int[] one = new int[5];
+        int[] two = new int[5];
+
+        for (int i = 0; i < 5; i++) {
+            one[i] = (int) (Math.random() * 100);
+            two[i] = (int) (Math.random() * 100);
+
+        }
         System.out.println(Arrays.toString(one));
         System.out.println(Arrays.toString(two));
 
